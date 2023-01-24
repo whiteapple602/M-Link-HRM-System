@@ -863,7 +863,7 @@ class Admin extends CI_Controller {
         }
 
         if ($param1 == 'upload_logo') {
-            move_uploaded_file($_FILES['userfile']['tmp_name'], 'uploads/logo.png');
+            move_uploaded_file($_FILES['userfile']['name'], 'uploads/logo.png');
             $this->session->set_flashdata('flash_message', get_phrase('settings_updated'));
             redirect(site_url('admin/system_settings/'), 'refresh');
         }
