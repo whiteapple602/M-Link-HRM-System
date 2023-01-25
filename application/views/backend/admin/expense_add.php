@@ -32,7 +32,7 @@
                     <label for="field-1" class="col-sm-3 control-label"><?php echo get_phrase('amount'); ?></label>
 
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" name="amount" required value="" />
+                        <input type="number" class="form-control" name="amount" required value="" />
                     </div>
                 </div>
 
